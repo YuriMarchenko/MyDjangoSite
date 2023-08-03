@@ -1,0 +1,119 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block title %}
+    ГОЛОВНА
+{% endblock title %}
+
+{% block container %}
+
+        <!-- Add images to <div class="fotorama"></div> -->
+        <div class="fotorama">
+            <img src="{% static '/images/foto2.jpg' %}">
+            <img src="{% static 'images/foto1.jpg' %}">
+            <img src="{% static 'images/foto3.jpg' %}">
+            <img src="{% static 'images/foto4.jpg' %}">
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+            <script src="{% static '/js/slick.min.js' %}"></script>
+            <script src="{% static '/js/lightbox-plus-jquery.min.js' %}"></script>
+            <script src="{% static '/js/main.js' %}"></script>
+            
+    </div>
+
+
+    <main>
+        <h1>Інтернет-магазин "Kiev-Меблі"</h1>
+        <p>Це Ваш провідник в світ кращих меблів та аксесуарів для дому.
+            Ми допоможемо з вибором серед більш як 50 тисяч товарів, запропонуємо приємну ціну на меблі, доставимо їх
+            додому та складемо — загалом зробимо все, щоб Ви насолоджувалися часом, проведеним вдома.
+            Працюємо в цій сфері більше 23 років, співпрацюємо зі всіма топовими фабриками України та закордону, а також
+            дотримуємось гарантійних обов'язків, щоб Ви залишалися задоволені покупками.</p>
+
+
+
+
+        <h1>Переваги</h1>
+        <div class="advantages-wrap">
+            <div class="adv1">
+                <img src="{% static '/images/1.png' %}" alt="">
+                <h3>Нам довіряють</h3>
+                На ринку з 1995 року, більше 99 тисяч сімей по всій Україні довірили нам облаштування свого дому
+            </div>
+
+            <div class="adv2">
+               <img src="{% static '/images/2.png' %}" alt="">
+                <h3>Гарантія</h3>
+                Гарантія на всю продукцію від 1 до 20 років
+            </div>
+
+            <div class="adv3">
+                <img src="{% static '/images/3.png' %}" alt="">
+                <h3>Доставка по всій Україні</h3>
+               Знижена вартість доставки Новою Поштою і власна доставка в більше ніж 25 міст по всій Україні
+            </div>
+
+            <div class="adv4">
+                <img src="{% static '/images/4.png' %}" alt="">
+                <h3>Розстрочка</h3>
+                Кращі умови розстрочки серед меблевих магазинів
+            </div>
+
+            <div class="adv5">
+                <img src="{% static '/images/5.png' %}" alt="">
+                <h3>Безготівковий розрахунок</h3>
+                Для фізичних та юридичних осіб
+            </div>
+
+        </div>
+
+        <h1>Каталог робіт</h1>
+        <div class="works">
+            <div class="advantages-wrap">
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_1_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_1.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_2_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_2.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_3_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_3.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_4_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_4.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_5_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_5.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_6_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_6.jpg' %}" alt="">
+                    </a>
+                </div>
+                <div class="foto-works">
+                    <a href="{% static '/images/DreamShaper_7_big.jpg' %}" data-lightbox="lbox">
+                    <img src="{% static '/images/DreamShaper_7.jpg' %}" alt="">
+                    </a>
+                </div>
+        </div>
+        
+    </main>
+
+
+
+</body>
+
+
+{% endblock container %}

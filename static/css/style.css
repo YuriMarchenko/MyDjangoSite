@@ -1,0 +1,368 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    /*background-color: #fff;*/
+    background-color: rgb(35, 35, 35);
+    margin: 0;
+    font-size: 16px;
+    
+}
+
+main {
+    padding-left: 10px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    min-width: none;
+    background-color: #000000;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding-left: 10px;
+    font: bold;
+    font-size: 30px;
+}
+
+h2{
+    font: bold;
+    color: red; 
+}
+
+h3{
+   font: bold;
+   padding-left: 10px;
+}
+
+.wrap-img {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.portfolio > img {
+    display: block;
+}
+
+.portfolio:before {
+    content: 'Logo';
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #fb8000;
+    color: #fff;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.wrapper{
+    min-width: 0;
+    background-color: rgb(248, 248, 228);
+}
+
+.slider{
+    display: flex;
+    min-width: 0;
+}
+
+.navbar {
+    margin: 0;
+    width: 100%;
+    height: 150px;
+
+    overflow: hidden;
+    bottom: 0;
+    
+}
+
+.navbar-footer {
+    margin: 0;
+    width: 100%;
+    height: 90px;
+
+    overflow: hidden;
+    bottom: 0;
+    
+}
+
+.navbar .container {
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 18px;
+    font: bold;
+    color: rgb(0, 0, 0);
+    background-color:#fb8000;
+}
+
+.navbar-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+}
+
+.line-wrap {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    align-self: center;
+    left: 25%;
+
+}
+
+.navbar-menu {
+    height: inherit;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.navbar-menu li {
+    padding: 5px;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+.navbar-menu li a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-items:auto;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font: bold;
+}
+
+.navbar a:hover {
+    color: #fb8000;
+    transition: .5s;
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    color: #fb8000;
+    text-decoration: none;
+    cursor: none;
+}
+
+
+.logo {
+    display: flexbox;
+    flex-flow: row nowrap;
+    /* padding: 6px 6px 6px 10px; */
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 140px;
+    top: 5px;
+    left: 5px;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.wrapper-main {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 50px 0px 50px 0px;
+    color: white;
+    align-items: center;
+}
+
+
+.advantages-wrap {
+    display: flex;
+    justify-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.advantages-wrap img {
+    display: flexbox;
+    justify-items:center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+.adv1, .adv2, .adv3, .adv4, .adv5{
+    display: flexbox;
+    max-width: 15%;
+    border: 1px solid #000000;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    /* margin:0 0 5px 5px; */
+}
+
+.phone {
+    top: 75px;
+    right: 50%;
+    font-size: 14px;
+    min-width: 260px;
+    margin-right: -15px;
+    margin-left: 50px;
+}
+
+.phone .icon_phone {
+    position: absolute;
+    top: 260px;
+    left: 50px;
+    display: block;
+    background: url(/app/images/icon_phone.png) 0 0 no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.copyright{
+    padding-left: 20px;
+    color: #000000;
+}
+
+.contacts {
+    display:flex;
+    justify-content:space-around;
+}
+
+.social {
+    margin: 0;
+    padding-left: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type:none;
+    align-items: center;
+    color: #fb8000;
+    background-color: rgba(212, 213, 213, 0.34);
+}
+
+
+.social .fb img, .in img {
+    height: 30px;
+    width: 30px;
+    
+}
+
+.social li .fb, .tg, .yt, .in {
+    marker: none;
+   
+}
+
+.social a {
+    color:#fff;
+}
+
+.portfolio {
+    height: 350px;
+    width: 350px;
+    align-self: center;
+}
+
+price-service {
+    font: bold;
+    color: red;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-footer a:hover {
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.navbar-footer a.active {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: none;
+}
+
+.navbar-footer .container-footer {
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    align-items:flex-end;
+    font-size: 18px;
+    font: bold;
+    color: white;
+    background-color:#fb8000;
+}
+
+.fotorama {
+    align-content: center;
+}
+
+.works {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto-works {
+    /*margin: 5px;*/
+    width: 250px;
+    height: 300px;
+    /*border: 5px solid #90ccdf;*/
+    overflow: hidden;
+}
+
+.foto-works img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+    padding: 5px;
+    margin: 5 px;
+    border: #fb8000 2px solid;
+   
+}
+
+.foto-works :hover img {
+    transform: scale(1.1);
+}
+
+.heateor_sss_sharing_container {
+    display: flex;
+}
+
+.login-form-wrapper {
+    font-size: 24px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    justify-items: left;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+}
+
+.username {
+    left-margin: 30px;
+    position: center;
+    margin: 10px;
+}

@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Exo+2:wght@200;300&family=Montserrat:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static '/css/lightbox.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="
+        https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css
+        " rel="stylesheet">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <title> {% block title %}
+                 Меблі для кожного за доступними цінами
+            {% endblock title %}
+    </title>
+</head>
+
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+
+
+            <div class="navbar-brand">
+                <a href="{% url 'index' %}"><img class="logo" src="{% static '/images/logo.png' %}" title=""></a>
+            </div>
+
+           <div class="navbar-wrap">
+                
+                <div class="line-wrap">
+                     <ul class="navbar-menu">
+                    <li><a href="{% url 'actions' %}">Акції</a></li>
+                    <li><a href="{% url 'orders' %}">Замовлення</a>
+                    <li><a href="{% url 'payments' %}">Оплата і доставка</a></li>
+                    <li><a href="{% url 'guarantee' %}">Гарантія</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакти</a></li>
+                    <li><a href="{% url 'about' %}">Про нас</a></li>
+                    <li><a href="#">login</a></li>
+                    <!-- <li><a href="feedback.html">Зворотній зв'язок</a></li>  -->
+                </ul>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+
+{% block container %}
+
+{% endblock container %}
+
+<footer>
+    <nav class="navbar-footer">
+
+        <div class="container-footer">
+            <div class="copyright">©2023 Design Studio Marchenko</div>
+            <div class="navbar-wrap">
+
+                <ul class="navbar-menu">
+                    <li><a href="{% url 'actions' %}">Акції</a></li>
+                    <li><a href="{% url 'orders' %}">Замовлення</a>
+                    <li><a href="{% url 'payments' %}">Оплата і доставка</a></li>
+                    <li><a href="{% url 'guarantee' %}">Гарантія</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакти</a></li>
+                    <li><a href="{% url 'about' %}">Про нас</a></li>
+                    <!-- <li><a href="feedback.html">Зворотній зв'язок</a></li>  -->
+                </ul>
+
+                <div class="heateor_sss_sharing_container">
+
+
+                    <div class="heateor_sss_sharing_ul">
+                        <a class="heateor_sss_facebook" href="https://www.facebook.com/" title="Facebook" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle">
+                        <span class="heateor_sss_svg" style="background-color:#3c589a;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box">
+                            <svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="-5 -5 42 42">
+                                <path d="M17.78 27.5V17.008h3.522l.527-4.09h-4.05v-2.61c0-1.182.33-1.99 2.023-1.99h2.166V4.66c-.375-.05-1.66-.16-3.155-.16-3.123 0-5.26 1.905-5.26 5.405v3.016h-3.53v4.09h3.53V27.5h4.223z" fill="#fff">
+
+                                </path>
+                            </svg>
+                        </span>
+                        </a>
+
+
+                        <a class="heateor_sss_button_telegram" href="https://telegram.me/" title="Telegram" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle">
+                            <span class="heateor_sss_svg heateor_sss_s__default heateor_sss_s_telegram" style="background-color:#3da5f1;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box">
+                                <svg style="display:block;border-radius:999px;" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 32 32">
+                                    <path fill="#fff" d="M25.515 6.896L6.027 14.41c-1.33.534-1.322 1.276-.243 1.606l5 1.56 1.72 5.66c.226.625.115.873.77.873.506 0 .73-.235 1.012-.51l2.43-2.363 5.056 3.734c.93.514 1.602.25 1.834-.863l3.32-15.638c.338-1.363-.52-1.98-1.41-1.577z">
+
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="heateor_sss_button_instagram" href="https://www.instagram.com/" title="Instagram" rel="nofollow noopener" target="_blank" style="font-size:32px!important;box-shadow:none;display:inline-block;vertical-align:middle">
+                            <span class="heateor_sss_svg" style="background-color:#53beee;width:35px;height:35px;border-radius:999px;display:inline-block;opacity:1;float:left;font-size:32px;box-shadow:none;display:inline-block;font-size:16px;padding:0 4px;vertical-align:middle;background-repeat:repeat;overflow:hidden;padding:0;cursor:pointer;box-sizing:content-box">
+                                <svg style="display:block;border-radius:999px;" version="1.1" viewBox="-10 -10 148 148" width="100%" height="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <g>
+                                            <path d="M86,112H42c-14.336,0-26-11.663-26-26V42c0-14.337,11.664-26,26-26h44c14.337,0,26,11.663,26,26v44 C112,100.337,100.337,112,86,112z M42,24c-9.925,0-18,8.074-18,18v44c0,9.925,8.075,18,18,18h44c9.926,0,18-8.075,18-18V42 c0-9.926-8.074-18-18-18H42z" fill="#fff">
+
+                                            </path>
+                                        </g>
+                                        <g>
+                                            <path d="M64,88c-13.234,0-24-10.767-24-24c0-13.234,10.766-24,24-24s24,10.766,24,24C88,77.233,77.234,88,64,88z M64,48c-8.822,0-16,7.178-16,16s7.178,16,16,16c8.822,0,16-7.178,16-16S72.822,48,64,48z" fill="#fff">
+
+                                            </path>
+                                        </g>
+                                        <g>
+                                            <circle cx="89.5" cy="38.5" fill="#fff" r="5.5">
+
+                                            </circle>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+</footer>
+
+</html>
